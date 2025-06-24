@@ -62,3 +62,9 @@ csCourse.apsLimit = 24 // adding a new property key and value
 delete csCourse.courseName
 
 // using loops to check for valuses in an array or object whild not being sure of the data, its type and position
+
+courses.push("Mechanical Engineering")
+
+console.log(courses);
+courses[0] = ""
+console.log(courses);
