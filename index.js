@@ -27,3 +27,38 @@ console.log(isMale);
 
 console.log(ageAsString);
 console.log(ageAsString.charAt(3));
+
+//Arrays : used to store multiple elements in one variable, uses square [] brackets
+//Objects : a collection of key value pairs, where key is property, and value is property
+
+//declaring courses array
+
+let courses = ["Computer Science", "Biological Science", "Information Technology", "Electrical Engineering", "Mathematics", "Systems Design", "Database Design"]
+
+//index : start at 0,making the last element to be at index = courses.length - 1
+console.log(courses[0]);
+console.log(courses[courses.length-1]);
+
+//this is our object
+let csCourse = {
+    courseName: "Computer Science",
+    courseDuration: 3,
+    apsLimit: 24,
+    modules: [
+        "Mathematics",
+        "Systems Design",
+        "Database Design"
+    ]
+}
+
+console.log(csCourse)
+
+// working with data in the array
+csCourse.courseName = "Information Technology" // adding into the array
+csCourse.modules.push("Statistics") // updateing the array
+csCourse.modules[4] = "Mobile Computing"
+csCourse.modules[0] = csCourse.modules[0].trim()
+csCourse.apsLimit = 24 // adding a new property key and value
+delete csCourse.courseName
+
+// using loops to check for valuses in an array or object whild not being sure of the data, its type and position
